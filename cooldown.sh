@@ -13,7 +13,7 @@ if [ "$action" = "s" ]; then
 else
     actionDisplay='Powering off'
 fi
-
+# Get the notification ID, so It can be replaced later
 cooldownNotificationId=$(notify-send -i $iconPath -t 0 -a 'System cooldown' "$actionDisplay in $time:00" -i temperature-cold -p)
 
 echo "Started system cooldown, $actionDisplay in $time Minutes..."
