@@ -7,7 +7,6 @@ actionDisplay='Sleeping'
 iconPath=$(realpath icon.png)
 filename=$(basename $0)
 cooldownNotificationId='noId'
-abortNotificationId='noId2'
 
 if [ "$action" = "s" ]; then
     actionDisplay='Sleeping'
