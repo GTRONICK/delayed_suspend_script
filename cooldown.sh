@@ -16,6 +16,7 @@ fi
 # Get the notification ID, so It can be replaced later
 cooldownNotificationId=$(notify-send -i $iconPath -t 0 -a 'System cooldown' "$actionDisplay in $time:00" -i temperature-cold -p)
 
+# Console messages
 echo "Started system cooldown, $actionDisplay in $time Minutes..."
 echo 'Close this window to abort'
 
